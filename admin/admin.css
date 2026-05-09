@@ -1,45 +1,45 @@
 :root {
   /* MONARCH storefront tokens — admin panel parity */
-  --bg-0: #030303;
-  --bg-1: #070707;
-  --bg-2: #0d0d0d;
-  --bg-3: #141312;
-  --bg-4: #1a1816;
+  --bg-0: #050104;
+  --bg-1: #080207;
+  --bg-2: #11040d;
+  --bg-3: #1a0714;
+  --bg-4: #240a1b;
 
-  --surface: rgba(255, 255, 255, 0.045);
-  --surface-soft: rgba(255, 255, 255, 0.032);
-  --surface-strong: rgba(255, 255, 255, 0.072);
-  --surface-card: rgba(255, 255, 255, 0.058);
-  --surface-amber: rgba(217, 167, 93, 0.105);
+  --surface: rgba(255, 255, 255, 0.055);
+  --surface-soft: rgba(255, 255, 255, 0.038);
+  --surface-strong: rgba(255, 255, 255, 0.082);
+  --surface-card: rgba(255, 255, 255, 0.068);
+  --surface-amber: rgba(255, 91, 189, 0.12);
 
-  --text: #f5f1ea;
-  --text-strong: #fff8f0;
-  --muted: #b9ada0;
-  --soft: #867d73;
+  --text: #fff3fa;
+  --text-strong: #ffffff;
+  --muted: #cdb9c6;
+  --soft: #9b8293;
 
-  --accent: #d9a75d;
-  --accent-2: #f2c57b;
-  --accent-3: #efba73;
-  --accent-deep: #b88444;
-  --accent-soft: rgba(217, 167, 93, 0.16);
-  --accent-faint: rgba(217, 167, 93, 0.08);
-  --accent-line: rgba(217, 167, 93, 0.22);
-  --accent-line-strong: rgba(239, 186, 115, 0.34);
+  --accent: #ff5bbd;
+  --accent-2: #ffc4ee;
+  --accent-3: #ff9bdd;
+  --accent-deep: #d92f94;
+  --accent-soft: rgba(255, 91, 189, 0.18);
+  --accent-faint: rgba(255, 91, 189, 0.09);
+  --accent-line: rgba(255, 91, 189, 0.26);
+  --accent-line-strong: rgba(255, 155, 221, 0.42);
 
-  --line: rgba(255, 255, 255, 0.08);
-  --line-strong: rgba(255, 255, 255, 0.14);
-  --line-soft: rgba(255, 255, 255, 0.045);
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --line-soft: rgba(255, 255, 255, 0.052);
 
-  --shadow-xs: 0 8px 18px rgba(0, 0, 0, 0.18);
-  --shadow-sm: 0 14px 28px rgba(0, 0, 0, 0.24);
-  --shadow-md: 0 22px 48px rgba(0, 0, 0, 0.32);
-  --shadow-lg: 0 34px 84px rgba(0, 0, 0, 0.42);
-  --shadow-amber: 0 22px 52px rgba(185, 135, 68, 0.22);
+  --shadow-xs: 0 8px 18px rgba(0, 0, 0, 0.22);
+  --shadow-sm: 0 14px 28px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 22px 48px rgba(0, 0, 0, 0.36);
+  --shadow-lg: 0 34px 84px rgba(0, 0, 0, 0.46);
+  --shadow-amber: 0 22px 52px rgba(217, 47, 148, 0.28);
 
   --glass: blur(22px) saturate(145%);
   --glass-light: blur(14px) saturate(132%);
-  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.075);
-  --glass-highlight-strong: inset 0 1px 0 rgba(255, 255, 255, 0.105);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.085);
+  --glass-highlight-strong: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 
   --radius-xxl: 42px;
   --radius-xl: 34px;
@@ -59,10 +59,10 @@
   --dogma-elevated: var(--surface-strong);
   --dogma-border: var(--accent-line);
   --dogma-gold: var(--accent);
-  --dogma-gold-dim: rgba(217, 167, 93, 0.55);
+  --dogma-gold-dim: rgba(255, 155, 221, 0.7);
   --dogma-text: var(--text);
   --dogma-muted: var(--muted);
-  --dogma-danger: #c45c5c;
+  --dogma-danger: #ff6f9f;
   --dogma-radius: var(--radius-xs);
   --font: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-display: "Sora", "Manrope", system-ui, sans-serif;
@@ -84,9 +84,9 @@ body.monarch-admin-body {
   font-family: var(--font);
   color: var(--text);
   background:
-    radial-gradient(circle at 0% 0%, rgba(217, 167, 93, 0.13), transparent 25%),
-    radial-gradient(circle at 100% 8%, rgba(239, 186, 115, 0.075), transparent 25%),
-    radial-gradient(circle at 50% 100%, rgba(217, 167, 93, 0.055), transparent 32%),
+    radial-gradient(circle at 0% 0%, rgba(255, 91, 189, 0.16), transparent 25%),
+    radial-gradient(circle at 100% 8%, rgba(255, 155, 221, 0.1), transparent 25%),
+    radial-gradient(circle at 50% 100%, rgba(255, 91, 189, 0.07), transparent 32%),
     linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 42%, var(--bg-2) 100%);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -101,9 +101,9 @@ body.monarch-admin-body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    linear-gradient(rgba(3, 3, 3, 0.22), rgba(3, 3, 3, 0.62)),
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(5, 1, 4, 0.2), rgba(5, 1, 4, 0.64)),
+    linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
   background-size: auto, 34px 34px, 34px 34px;
   mask-image: radial-gradient(circle at 50% 18%, black 18%, transparent 82%);
 }
@@ -142,7 +142,7 @@ body.monarch-admin-body > * {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background:
-    linear-gradient(165deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.028)),
+    linear-gradient(165deg, rgba(255, 255, 255, 0.078), rgba(255, 255, 255, 0.032)),
     var(--surface-card);
   backdrop-filter: var(--glass);
   -webkit-backdrop-filter: var(--glass);
@@ -160,7 +160,7 @@ body.monarch-admin-body > * {
   background: linear-gradient(180deg, var(--accent-2), var(--accent) 55%, var(--accent-deep));
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 10px 28px rgba(0, 0, 0, 0.38));
 }
 
 .dogma-admin__head p {
@@ -191,16 +191,16 @@ body.monarch-admin-body > * {
 
 .dogma-btn:hover {
   border-color: var(--dogma-gold-dim);
-  background: #222731;
+  background: #24101f;
 }
 
 .dogma-btn--primary {
-  color: #18120b;
-  border-color: rgba(239, 186, 115, 0.32);
+  color: #ffffff;
+  border-color: rgba(255, 155, 221, 0.42);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.28), transparent 42%),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.32), transparent 42%),
     linear-gradient(180deg, var(--accent-2) 0%, var(--accent) 56%, var(--accent-deep) 100%);
-  box-shadow: var(--shadow-amber), 0 0 26px rgba(239, 186, 115, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  box-shadow: var(--shadow-amber), 0 0 26px rgba(255, 155, 221, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.32);
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -209,9 +209,9 @@ body.monarch-admin-body > * {
 }
 
 .dogma-btn--primary:hover {
-  filter: brightness(1.04) saturate(1.04);
-  box-shadow: 0 26px 58px rgba(185, 135, 68, 0.28), 0 0 0 5px rgba(239, 186, 115, 0.08),
-    0 0 42px rgba(239, 186, 115, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+  filter: brightness(1.05) saturate(1.06);
+  box-shadow: 0 26px 58px rgba(217, 47, 148, 0.34), 0 0 0 5px rgba(255, 155, 221, 0.1),
+    0 0 42px rgba(255, 155, 221, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.36);
   transform: translateY(-1px);
 }
 
@@ -224,12 +224,12 @@ body.monarch-admin-body > * {
 }
 
 .dogma-btn--danger {
-  border-color: rgba(196, 92, 92, 0.45);
-  color: #f0b4b4;
+  border-color: rgba(255, 111, 159, 0.52);
+  color: #ffd1df;
 }
 
 .dogma-btn--danger:hover {
-  background: rgba(196, 92, 92, 0.12);
+  background: rgba(255, 111, 159, 0.14);
 }
 
 .dogma-status {
@@ -239,7 +239,7 @@ body.monarch-admin-body > * {
 }
 
 .dogma-status--ok {
-  color: #7dcea0;
+  color: #ffb4e6;
 }
 
 .dogma-status--err {
@@ -289,12 +289,12 @@ body.monarch-admin-body > * {
 }
 
 .dogma-tab.active {
-  color: #18120b;
-  border-color: rgba(239, 186, 115, 0.32);
+  color: #ffffff;
+  border-color: rgba(255, 155, 221, 0.42);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.28), transparent 42%),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.32), transparent 42%),
     linear-gradient(180deg, var(--accent-2) 0%, var(--accent) 56%, var(--accent-deep) 100%);
-  box-shadow: var(--shadow-amber), 0 0 24px rgba(239, 186, 115, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  box-shadow: var(--shadow-amber), 0 0 24px rgba(255, 155, 221, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.32);
 }
 
 .dogma-panel {
@@ -316,10 +316,10 @@ body.monarch-admin-body > * {
 
 .admin-app .dogma-item,
 .admin-app .dogma-subcard {
-  background: rgba(18, 21, 26, 0.78);
+  background: rgba(25, 10, 21, 0.8);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.38);
 }
 
 .dogma-card {
@@ -332,13 +332,13 @@ body.monarch-admin-body > * {
 
 @keyframes dogma-card-flash {
   0% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.55);
+    box-shadow: 0 0 0 0 rgba(255, 91, 189, 0.6);
   }
   25% {
-    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 0 0 4px rgba(255, 91, 189, 0.38);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    box-shadow: 0 0 0 0 rgba(255, 91, 189, 0);
   }
 }
 
@@ -359,7 +359,7 @@ body.monarch-admin-body > * {
 .dogma-subcard--inner {
   margin-top: 14px;
   padding: 14px;
-  background: rgba(10, 12, 16, 0.55);
+  background: rgba(12, 5, 10, 0.6);
 }
 
 .dogma-panel-subtitle--nest {
@@ -397,9 +397,9 @@ body.monarch-admin-body > * {
   max-height: min(62vh, 520px);
   overflow: auto;
   border-radius: 16px;
-  border: 1px solid rgba(140, 176, 255, 0.38);
-  background: linear-gradient(180deg, rgba(26, 38, 64, 0.96), rgba(18, 28, 50, 0.94));
-  box-shadow: 0 18px 42px rgba(8, 14, 28, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 91, 189, 0.46);
+  background: linear-gradient(180deg, rgba(48, 12, 38, 0.97), rgba(30, 7, 25, 0.95));
+  box-shadow: 0 18px 42px rgba(10, 2, 8, 0.46), inset 0 1px 0 rgba(255, 255, 255, 0.09);
   padding: 12px;
   pointer-events: auto;
   transform: translateY(8px);
@@ -414,8 +414,8 @@ body.monarch-admin-body > * {
 
 .dogma-sheet h4 {
   margin: 0 0 10px;
-  color: #eef4ff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  color: #fff3fa;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
 }
 
 .dogma-sheet-close {
@@ -424,8 +424,8 @@ body.monarch-admin-body > * {
   height: 34px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(173, 202, 255, 0.16);
-  color: #eaf2ff;
+  background: rgba(255, 155, 221, 0.18);
+  color: #fff3fa;
   font-size: 22px;
   line-height: 1;
   display: grid;
@@ -454,15 +454,15 @@ body.monarch-admin-body > * {
 }
 
 .dogma-sheet .dogma-field-hint {
-  color: rgba(236, 244, 255, 0.94);
+  color: rgba(255, 243, 250, 0.94);
 }
 
 .dogma-sheet .dogma-btn--ghost {
-  border-color: rgba(126, 168, 255, 0.45);
-  background: linear-gradient(180deg, rgba(118, 160, 250, 0.18), rgba(68, 108, 196, 0.2));
-  color: #f4f8ff !important;
+  border-color: rgba(255, 155, 221, 0.52);
+  background: linear-gradient(180deg, rgba(255, 91, 189, 0.2), rgba(217, 47, 148, 0.22));
+  color: #ffffff !important;
   font-weight: 800;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 .dogma-sheet .dogma-btn--ghost:hover,
@@ -513,15 +513,15 @@ body.monarch-admin-body > * {
   font-size: 0.9rem;
   overflow-wrap: anywhere;
   word-break: break-word;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.03);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
 }
 
 .dogma-field input:focus,
 .dogma-field textarea:focus,
 .dogma-field select:focus {
   outline: none;
-  border-color: rgba(212, 175, 55, 0.52);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+  border-color: rgba(255, 155, 221, 0.58);
+  box-shadow: 0 0 0 3px rgba(255, 91, 189, 0.15);
 }
 
 .dogma-field textarea {
@@ -604,13 +604,13 @@ video.dogma-preview {
 
 .dogma-dirty-banner {
   font-size: 0.82rem;
-  color: #e6c35a;
+  color: #ffb4e6;
   font-weight: 600;
   min-height: 1.2em;
 }
 
 .dogma-dirty-banner.dogma-dirty {
-  color: #e6c35a;
+  color: #ffb4e6;
 }
 
 .dogma-subhead {
@@ -761,7 +761,7 @@ video.dogma-preview {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #7dcea0;
+  color: #ffb4e6;
   margin-bottom: 10px;
 }
 
@@ -804,7 +804,7 @@ video.dogma-preview {
   padding: 10px 12px;
   border: 1px dashed var(--dogma-border);
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(8, 2, 7, 0.26);
 }
 
 .dogma-details summary {
@@ -842,7 +842,7 @@ video.dogma-preview {
 
 .dogma-lang-pill.active {
   background: var(--dogma-gold);
-  color: var(--dogma-bg);
+  color: #ffffff;
   border-color: var(--dogma-gold);
 }
 
@@ -881,8 +881,8 @@ video.dogma-preview {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid var(--dogma-gold-dim);
-  background: rgba(212, 175, 55, 0.15);
-  color: #f5e6b8;
+  background: rgba(255, 91, 189, 0.16);
+  color: #ffe6f5;
   font-weight: 700;
   cursor: default;
 }
@@ -994,7 +994,7 @@ video.dogma-preview {
   bottom: 0;
   z-index: 50;
   padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0));
-  background: linear-gradient(180deg, transparent, rgba(10, 11, 13, 0.96) 30%);
+  background: linear-gradient(180deg, transparent, rgba(12, 5, 10, 0.97) 30%);
   display: flex;
   justify-content: center;
   pointer-events: none;
@@ -1113,10 +1113,10 @@ video.dogma-preview {
   padding: 22px 20px 26px;
   border-radius: 18px;
   border: 1px solid var(--dogma-border);
-  background: linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.064), rgba(255, 255, 255, 0.024));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.36);
 }
 
 .dogma-panel.active {
@@ -1129,8 +1129,8 @@ video.dogma-preview {
   gap: 8px;
   padding: 10px;
   border-radius: 16px;
-  border: 1px solid rgba(212, 175, 55, 0.16);
-  background: rgba(8, 10, 14, 0.55);
+  border: 1px solid rgba(255, 91, 189, 0.2);
+  background: rgba(12, 5, 10, 0.58);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   position: sticky;
@@ -1157,15 +1157,15 @@ video.dogma-preview {
 
 .dogma-tab:hover {
   color: var(--dogma-text);
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.046);
+  border-color: rgba(255, 255, 255, 0.07);
 }
 
 .dogma-tab.active {
-  color: #18120b;
-  border-color: rgba(212, 175, 55, 0.45);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(212, 175, 55, 0.88));
-  box-shadow: 0 10px 26px rgba(185, 135, 68, 0.22);
+  color: #ffffff;
+  border-color: rgba(255, 91, 189, 0.52);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.26), rgba(255, 91, 189, 0.92));
+  box-shadow: 0 10px 26px rgba(217, 47, 148, 0.28);
 }
 
 .dogma-tab:active {
@@ -1175,13 +1175,13 @@ video.dogma-preview {
 .dogma-item {
   padding: 18px 16px;
   border-radius: 16px;
-  border: 1px solid rgba(212, 175, 55, 0.14);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 91, 189, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.054), rgba(255, 255, 255, 0.018));
   margin-bottom: 14px;
 }
 
 .dogma-subcard {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(10, 12, 16, 0.35));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.048), rgba(12, 5, 10, 0.38));
 }
 
 .dogma-mini-title,
@@ -1205,8 +1205,8 @@ video.dogma-preview {
   font-size: 0.78em;
   padding: 2px 6px;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   color: var(--dogma-gold-dim);
 }
 
@@ -1236,7 +1236,7 @@ video.dogma-preview {
   padding: 10px 12px;
   border-radius: 12px;
   border: 1px solid var(--dogma-border);
-  background: rgba(12, 14, 18, 0.65);
+  background: rgba(18, 8, 15, 0.68);
   color: var(--dogma-text);
   font-size: 0.9rem;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
@@ -1250,15 +1250,15 @@ video.dogma-preview {
 .dogma-field input:hover,
 .dogma-field textarea:hover,
 .dogma-field select:hover {
-  border-color: rgba(212, 175, 55, 0.28);
+  border-color: rgba(255, 91, 189, 0.34);
 }
 
 .dogma-field input:focus,
 .dogma-field textarea:focus,
 .dogma-field select:focus {
   outline: none;
-  border-color: rgba(212, 175, 55, 0.5);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+  border-color: rgba(255, 155, 221, 0.58);
+  box-shadow: 0 0 0 3px rgba(255, 91, 189, 0.15);
 }
 
 .dogma-locale-grid {
@@ -1274,8 +1274,8 @@ video.dogma-preview {
 .dogma-details {
   margin-top: 16px;
   border-radius: 14px;
-  border: 1px dashed rgba(212, 175, 55, 0.22);
-  background: rgba(0, 0, 0, 0.2);
+  border: 1px dashed rgba(255, 91, 189, 0.28);
+  background: rgba(8, 2, 7, 0.26);
   padding: 8px 12px 12px;
 }
 
@@ -1305,22 +1305,22 @@ video.dogma-preview {
 }
 
 .dogma-btn--ghost {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.046);
 }
 
 .dogma-btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(212, 175, 55, 0.3);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 91, 189, 0.36);
 }
 
 .dogma-btn--danger {
-  border-color: rgba(196, 92, 92, 0.45);
-  color: #f0b4b4;
-  background: rgba(196, 92, 92, 0.12);
+  border-color: rgba(255, 111, 159, 0.52);
+  color: #ffd1df;
+  background: rgba(255, 111, 159, 0.14);
 }
 
 .dogma-btn--danger:hover {
-  background: rgba(196, 92, 92, 0.2);
+  background: rgba(255, 111, 159, 0.22);
 }
 
 .dogma-dirty-banner {
@@ -1330,7 +1330,7 @@ video.dogma-preview {
 }
 
 .dogma-dirty-banner.dogma-dirty {
-  color: #e8c96b;
+  color: #ffb4e6;
 }
 
 .dogma-status {
@@ -1339,11 +1339,11 @@ video.dogma-preview {
 }
 
 .dogma-status.ok {
-  color: #8fd19e;
+  color: #ffb4e6;
 }
 
 .dogma-status.err {
-  color: #f0a8a8;
+  color: #ff9ab8;
 }
 
 .dogma-card-hero {
@@ -1351,8 +1351,8 @@ video.dogma-preview {
   gap: 14px;
   padding: 16px;
   border-radius: 16px;
-  border: 1px solid rgba(212, 175, 55, 0.16);
-  background: rgba(8, 10, 14, 0.45);
+  border: 1px solid rgba(255, 91, 189, 0.2);
+  background: rgba(12, 5, 10, 0.48);
 }
 
 .dogma-card-hero__actions {
@@ -1392,11 +1392,11 @@ video.dogma-preview {
   padding: 28px 16px;
   text-align: center;
   border-radius: 14px;
-  border: 1px dashed rgba(212, 175, 55, 0.2);
+  border: 1px dashed rgba(255, 91, 189, 0.26);
   color: var(--dogma-muted);
   font-size: 0.9rem;
   line-height: 1.55;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(8, 2, 7, 0.2);
 }
 
 .dogma-item.dogma-card--flash {
@@ -1405,10 +1405,10 @@ video.dogma-preview {
 
 @keyframes monarchFlash {
   0% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.55);
+    box-shadow: 0 0 0 0 rgba(255, 91, 189, 0.6);
   }
   100% {
-    box-shadow: 0 0 0 24px rgba(212, 175, 55, 0);
+    box-shadow: 0 0 0 24px rgba(255, 91, 189, 0);
   }
 }
 
@@ -1445,7 +1445,7 @@ video.dogma-preview {
 }
 
 :focus-visible {
-  outline: 2px solid rgba(212, 175, 55, 0.65);
+  outline: 2px solid rgba(255, 155, 221, 0.72);
   outline-offset: 2px;
 }
 
@@ -1515,16 +1515,16 @@ video.dogma-preview {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  border: 1px solid rgba(212, 175, 55, 0.22);
-  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(255, 91, 189, 0.28);
+  background: rgba(255, 91, 189, 0.1);
   color: var(--dogma-gold-dim);
 }
 
 .dogma-muted-block {
   padding: 14px;
   border-radius: 12px;
-  background: rgba(0, 0, 0, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(8, 2, 7, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   color: var(--dogma-muted);
   font-size: 0.86rem;
   line-height: 1.5;
@@ -1533,8 +1533,8 @@ video.dogma-preview {
 .dogma-table-wrap {
   overflow-x: auto;
   border-radius: 14px;
-  border: 1px solid rgba(212, 175, 55, 0.14);
-  background: rgba(8, 10, 14, 0.35);
+  border: 1px solid rgba(255, 91, 189, 0.18);
+  background: rgba(12, 5, 10, 0.38);
   margin: 12px 0;
 }
 
@@ -1548,7 +1548,7 @@ video.dogma-preview {
 .dogma-table td {
   padding: 10px 12px;
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .dogma-table th {
@@ -1556,7 +1556,7 @@ video.dogma-preview {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--dogma-muted);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(8, 2, 7, 0.26);
 }
 
 .dogma-table tr:last-child td {
@@ -1564,7 +1564,7 @@ video.dogma-preview {
 }
 
 .dogma-table tbody tr:hover td {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.036);
 }
 
 .dogma-badge {
@@ -1576,21 +1576,21 @@ video.dogma-preview {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   color: var(--dogma-text);
 }
 
 .dogma-badge--gold {
-  border-color: rgba(212, 175, 55, 0.35);
+  border-color: rgba(255, 91, 189, 0.42);
   color: var(--dogma-gold);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(255, 91, 189, 0.12);
 }
 
 .dogma-divider {
   height: 1px;
   margin: 16px 0;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 91, 189, 0.32), transparent);
   border: 0;
 }
 
@@ -1604,40 +1604,40 @@ video.dogma-preview {
 }
 
 .admin-app ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(8, 2, 7, 0.32);
   border-radius: 999px;
 }
 
 .admin-app ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(212, 175, 55, 0.45), rgba(212, 175, 55, 0.2));
+  background: linear-gradient(180deg, rgba(255, 91, 189, 0.55), rgba(255, 91, 189, 0.24));
   border-radius: 999px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(8, 2, 7, 0.32);
 }
 
 .dogma-field input::placeholder,
 .dogma-field textarea::placeholder {
-  color: rgba(139, 147, 167, 0.55);
+  color: rgba(205, 185, 198, 0.58);
 }
 
 .dogma-file-input input[type="file"] {
   width: 100%;
   padding: 12px;
   border-radius: 12px;
-  border: 1px dashed rgba(212, 175, 55, 0.35);
-  background: rgba(0, 0, 0, 0.2);
+  border: 1px dashed rgba(255, 91, 189, 0.42);
+  background: rgba(8, 2, 7, 0.26);
   color: var(--dogma-muted);
   cursor: pointer;
 }
 
 .dogma-file-input input[type="file"]:hover {
-  border-color: rgba(212, 175, 55, 0.5);
-  background: rgba(212, 175, 55, 0.06);
+  border-color: rgba(255, 155, 221, 0.58);
+  background: rgba(255, 91, 189, 0.08);
 }
 
 .dogma-preview-box {
   border-radius: 14px;
-  border: 1px solid rgba(212, 175, 55, 0.16);
-  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 91, 189, 0.2);
+  background: rgba(8, 2, 7, 0.34);
   overflow: hidden;
 }
 
@@ -1648,7 +1648,7 @@ video.dogma-preview {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--dogma-muted);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .dogma-card-grid {
@@ -1660,8 +1660,8 @@ video.dogma-preview {
 .dogma-ghost-panel {
   padding: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.024);
 }
 
 .dogma-kbd {
@@ -1670,8 +1670,8 @@ video.dogma-preview {
   border-radius: 6px;
   font-size: 0.72rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(8, 2, 7, 0.42);
   color: var(--dogma-muted);
 }
 
@@ -1695,8 +1695,8 @@ video.dogma-preview {
 .dogma-booking-block {
   padding: 14px;
   border-radius: 14px;
-  border: 1px solid rgba(212, 175, 55, 0.12);
-  background: rgba(8, 10, 14, 0.4);
+  border: 1px solid rgba(255, 91, 189, 0.18);
+  background: rgba(12, 5, 10, 0.45);
   margin-bottom: 12px;
 }
 
@@ -1730,12 +1730,12 @@ video.dogma-preview {
   z-index: 60;
   padding: 12px 18px;
   border-radius: 14px;
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  background: rgba(12, 14, 18, 0.92);
+  border: 1px solid rgba(255, 91, 189, 0.38);
+  background: rgba(18, 8, 15, 0.94);
   backdrop-filter: blur(12px);
   color: var(--dogma-text);
   font-size: 0.88rem;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.48);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -1795,7 +1795,7 @@ video.dogma-preview {
 
 .dogma-footnote {
   font-size: 0.78rem;
-  color: rgba(139, 147, 167, 0.75);
+  color: rgba(205, 185, 198, 0.78);
   line-height: 1.45;
   margin-top: 8px;
 }
@@ -1809,7 +1809,7 @@ video.dogma-preview {
   padding: 8px;
   border-radius: 12px;
   border: 1px solid var(--dogma-border);
-  background: rgba(12, 14, 18, 0.65);
+  background: rgba(18, 8, 15, 0.68);
 }
 
 .dogma-tag-input input {
@@ -1828,8 +1828,8 @@ video.dogma-preview {
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 0.78rem;
-  background: rgba(212, 175, 55, 0.12);
-  border: 1px solid rgba(212, 175, 55, 0.22);
+  background: rgba(255, 91, 189, 0.14);
+  border: 1px solid rgba(255, 91, 189, 0.28);
   color: var(--dogma-text);
 }
 
@@ -1841,8 +1841,8 @@ video.dogma-preview {
   justify-content: space-between;
   padding: 14px 16px;
   border-radius: 14px;
-  border: 1px solid rgba(212, 175, 55, 0.18);
-  background: linear-gradient(90deg, rgba(212, 175, 55, 0.08), transparent);
+  border: 1px solid rgba(255, 91, 189, 0.24);
+  background: linear-gradient(90deg, rgba(255, 91, 189, 0.1), transparent);
   margin-bottom: 14px;
 }
 
@@ -1856,22 +1856,22 @@ video.dogma-preview {
   padding: 22px;
   text-align: center;
   border-radius: 16px;
-  border: 2px dashed rgba(212, 175, 55, 0.28);
-  background: rgba(0, 0, 0, 0.18);
+  border: 2px dashed rgba(255, 91, 189, 0.34);
+  background: rgba(8, 2, 7, 0.22);
   color: var(--dogma-muted);
   font-size: 0.88rem;
 }
 
 .dogma-dropzone:hover {
-  border-color: rgba(212, 175, 55, 0.45);
-  background: rgba(212, 175, 55, 0.06);
+  border-color: rgba(255, 155, 221, 0.52);
+  background: rgba(255, 91, 189, 0.08);
   color: var(--dogma-text);
 }
 
 .dogma-progress {
   height: 8px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.07);
   overflow: hidden;
   margin: 10px 0;
 }
@@ -1881,14 +1881,14 @@ video.dogma-preview {
   height: 100%;
   width: 40%;
   border-radius: inherit;
-  background: linear-gradient(90deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.85));
+  background: linear-gradient(90deg, rgba(255, 91, 189, 0.24), rgba(255, 91, 189, 0.92));
 }
 
 .dogma-quote {
   margin: 0;
   padding: 14px 16px;
-  border-left: 3px solid rgba(212, 175, 55, 0.55);
-  background: rgba(0, 0, 0, 0.2);
+  border-left: 3px solid rgba(255, 91, 189, 0.62);
+  background: rgba(8, 2, 7, 0.26);
   border-radius: 0 12px 12px 0;
   color: var(--dogma-muted);
   font-style: italic;
@@ -1897,7 +1897,7 @@ video.dogma-preview {
 }
 
 .dogma-admin .dogma-btn--save {
-  box-shadow: 0 14px 34px rgba(185, 135, 68, 0.22);
+  box-shadow: 0 14px 34px rgba(217, 47, 148, 0.28);
 }
 
 .dogma-lang-flag {
@@ -1910,25 +1910,25 @@ video.dogma-preview {
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.04em;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--dogma-muted);
 }
 
 .dogma-lang-flag--pl {
-  color: #e8eaef;
+  color: #ffe6f5;
 }
 
 .dogma-lang-flag--en {
-  color: #c8d4f0;
+  color: #ffd9f0;
 }
 
 .dogma-lang-flag--ru {
-  color: #f0d4d4;
+  color: #ffcfe8;
 }
 
 .dogma-lang-flag--ua {
-  color: #cfe8ff;
+  color: #fff0fa;
 }
 
 /* ========== MONARCH admin: interaction polish & density tokens ========== */
@@ -1941,19 +1941,19 @@ video.dogma-preview {
 
 .admin-app .dogma-btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(239, 186, 115, 0.22), var(--shadow-xs);
+  box-shadow: 0 0 0 3px rgba(255, 155, 221, 0.26), var(--shadow-xs);
 }
 
 .admin-app .dogma-btn--ghost {
   border-color: var(--line-strong);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.024));
   color: var(--text-strong);
   box-shadow: var(--shadow-xs), var(--glass-highlight);
 }
 
 .admin-app .dogma-btn--ghost:hover {
   border-color: var(--accent-line-strong);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.07);
   transform: translateY(-1px);
 }
 
@@ -1970,7 +1970,7 @@ video.dogma-preview {
 
 .admin-app .dogma-tab {
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(8, 2, 7, 0.24);
   border: 1px solid transparent;
   color: var(--muted);
   transition: color var(--transition), border-color var(--transition), background var(--transition),
@@ -1980,14 +1980,14 @@ video.dogma-preview {
 .admin-app .dogma-tab:hover {
   color: var(--text);
   border-color: var(--accent-line);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.048);
 }
 
 .admin-app .dogma-item,
 .admin-app .dogma-subcard {
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
-  background: linear-gradient(165deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.068), rgba(255, 255, 255, 0.024));
   box-shadow: var(--shadow-sm), var(--glass-highlight);
   backdrop-filter: var(--glass);
   -webkit-backdrop-filter: var(--glass);
@@ -1998,9 +1998,9 @@ video.dogma-preview {
 .admin-app .dogma-field select {
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.15));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.058), rgba(8, 2, 7, 0.18));
   color: var(--text);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.048);
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
@@ -2014,15 +2014,15 @@ video.dogma-preview {
 .admin-app .dogma-field textarea:focus,
 .admin-app .dogma-field select:focus {
   border-color: var(--accent-line-strong);
-  box-shadow: 0 0 0 3px rgba(239, 186, 115, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 3px rgba(255, 91, 189, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 
 .admin-app .dogma-save-bar {
   border-top: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.72), rgba(7, 7, 7, 0.92));
+  background: linear-gradient(180deg, rgba(12, 5, 10, 0.74), rgba(8, 2, 7, 0.94));
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
-  box-shadow: 0 -18px 48px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 -18px 48px rgba(0, 0, 0, 0.38);
 }
 
 .admin-app .dogma-subhead,
@@ -2033,11 +2033,11 @@ video.dogma-preview {
 
 .admin-app .dogma-dirty-banner {
   color: var(--accent-2);
-  text-shadow: 0 0 24px rgba(239, 186, 115, 0.22);
+  text-shadow: 0 0 24px rgba(255, 155, 221, 0.26);
 }
 
 .admin-app .dogma-status--ok {
-  color: #4ade80;
+  color: #ffb4e6;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2054,7 +2054,7 @@ video.dogma-preview {
 
 /* Selection & autofill — match storefront warmth */
 .admin-app ::selection {
-  background: rgba(217, 167, 93, 0.28);
+  background: rgba(255, 91, 189, 0.34);
   color: var(--text-strong);
 }
 
@@ -2063,7 +2063,7 @@ video.dogma-preview {
 .admin-app select:-webkit-autofill {
   -webkit-text-fill-color: var(--text) !important;
   transition: background-color 99999s ease-out;
-  box-shadow: 0 0 0 1000px rgba(20, 19, 18, 0.95) inset !important;
+  box-shadow: 0 0 0 1000px rgba(26, 7, 20, 0.96) inset !important;
 }
 
 /* Card editor: barber / gallery preview chrome */
@@ -2106,13 +2106,13 @@ body.monarch-admin-body::after {
 .admin-app .dogma-card-hero__media {
   aspect-ratio: 1;
   border-radius: var(--radius-sm);
-  background: radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.45));
+  background: radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.07), rgba(8, 2, 7, 0.5));
   border: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: var(--shadow-xs), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: var(--shadow-xs), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .admin-app .dogma-card-hero__media img,
@@ -2174,7 +2174,7 @@ body.monarch-admin-body::after {
   border-style: dashed;
   border-color: var(--accent-line);
   color: var(--accent-2);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(8, 2, 7, 0.26);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -2183,7 +2183,7 @@ body.monarch-admin-body::after {
 
 .admin-app .dogma-card-edit-toggle:hover {
   border-style: solid;
-  background: rgba(217, 167, 93, 0.08);
+  background: rgba(255, 91, 189, 0.1);
   color: var(--text-strong);
 }
 
@@ -2230,7 +2230,7 @@ body.monarch-admin-body::after {
   margin: 14px 0;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(8, 2, 7, 0.26);
   overflow: hidden;
 }
 
@@ -2263,7 +2263,7 @@ body.monarch-admin-body::after {
 }
 
 .admin-app .dogma-details[open] summary {
-  background: rgba(217, 167, 93, 0.08);
+  background: rgba(255, 91, 189, 0.1);
   color: var(--text);
 }
 
@@ -2277,7 +2277,7 @@ body.monarch-admin-body::after {
 }
 
 .admin-app .dogma-details--tech summary {
-  color: rgba(185, 173, 160, 0.85);
+  color: rgba(205, 185, 198, 0.86);
 }
 
 /* Language preview pills (card editor) */
@@ -2292,7 +2292,7 @@ body.monarch-admin-body::after {
 .admin-app .dogma-lang-pill {
   appearance: none;
   border: 1px solid var(--line);
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(8, 2, 7, 0.3);
   color: var(--muted);
   padding: 8px 14px;
   border-radius: 999px;
@@ -2310,10 +2310,10 @@ body.monarch-admin-body::after {
 }
 
 .admin-app .dogma-lang-pill.active {
-  color: #18120b;
-  border-color: rgba(239, 186, 115, 0.35);
+  color: #ffffff;
+  border-color: rgba(255, 155, 221, 0.44);
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.22), transparent 45%),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.26), transparent 45%),
     linear-gradient(180deg, var(--accent-2), var(--accent) 60%, var(--accent-deep));
   box-shadow: var(--shadow-amber);
 }
@@ -2325,7 +2325,7 @@ body.monarch-admin-body::after {
   padding: 16px;
   border-radius: var(--radius-md);
   border: 1px solid var(--accent-line);
-  background: linear-gradient(145deg, rgba(217, 167, 93, 0.07), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(145deg, rgba(255, 91, 189, 0.09), rgba(8, 2, 7, 0.3));
   box-shadow: var(--shadow-sm), var(--glass-highlight);
 }
 
@@ -2350,7 +2350,7 @@ body.monarch-admin-body::after {
   padding: 36px 20px;
   border-radius: var(--radius-md);
   border: 1px dashed var(--accent-line);
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(8, 2, 7, 0.22);
   margin-bottom: 16px;
 }
 
@@ -2378,14 +2378,14 @@ body.monarch-admin-body::after {
   padding: 10px 12px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.024);
   cursor: pointer;
   transition: border-color var(--transition), background var(--transition);
 }
 
 .admin-app .dogma-check:hover {
   border-color: var(--accent-line);
-  background: rgba(217, 167, 93, 0.06);
+  background: rgba(255, 91, 189, 0.08);
 }
 
 .admin-app .dogma-check input {
@@ -2406,28 +2406,28 @@ body.monarch-admin-body::after {
 .admin-app .dogma-badge.dogma-badge--off,
 .dogma-badge.dogma-badge--off {
   opacity: 0.72;
-  border-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.07);
   color: var(--muted);
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(8, 2, 7, 0.34);
 }
 
 /* Danger button — maroon glass */
 
 .admin-app .dogma-btn--danger {
-  border-color: rgba(220, 100, 100, 0.45);
-  color: #fecaca;
-  background: linear-gradient(180deg, rgba(80, 20, 20, 0.35), rgba(40, 10, 10, 0.45));
-  box-shadow: var(--shadow-xs), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 111, 159, 0.52);
+  color: #ffd1df;
+  background: linear-gradient(180deg, rgba(92, 20, 48, 0.38), rgba(48, 10, 28, 0.48));
+  box-shadow: var(--shadow-xs), inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 
 .admin-app .dogma-btn--danger:hover {
-  border-color: rgba(248, 113, 113, 0.55);
-  background: linear-gradient(180deg, rgba(120, 30, 30, 0.42), rgba(60, 15, 15, 0.5));
+  border-color: rgba(255, 137, 177, 0.62);
+  background: linear-gradient(180deg, rgba(140, 32, 76, 0.46), rgba(72, 16, 42, 0.54));
   color: #fff;
 }
 
 .admin-app .dogma-btn--danger:focus-visible {
-  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.22);
+  box-shadow: 0 0 0 3px rgba(255, 111, 159, 0.26);
 }
 
 /* Block primary CTAs */
@@ -2452,18 +2452,18 @@ body.monarch-admin-body::after {
 
 .admin-app .dogma-table-wrap {
   border-color: var(--line);
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(8, 2, 7, 0.26);
   backdrop-filter: var(--glass-light);
   -webkit-backdrop-filter: var(--glass-light);
 }
 
 .admin-app .dogma-table th {
-  background: rgba(217, 167, 93, 0.06);
+  background: rgba(255, 91, 189, 0.08);
   color: var(--muted);
 }
 
 .admin-app .dogma-table tbody tr:hover td {
-  background: rgba(217, 167, 93, 0.04);
+  background: rgba(255, 91, 189, 0.05);
 }
 
 /* Subcards & nested editors */
@@ -2471,13 +2471,13 @@ body.monarch-admin-body::after {
 .admin-app .dogma-subcard--inner {
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-soft);
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(8, 2, 7, 0.26);
 }
 
 .admin-app .dogma-muted-block {
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.034);
   color: var(--muted);
 }
 
@@ -2491,7 +2491,7 @@ body.monarch-admin-body::after {
 
 .admin-app .dogma-dropzone:hover {
   border-color: var(--accent-line-strong);
-  background: rgba(217, 167, 93, 0.07);
+  background: rgba(255, 91, 189, 0.09);
 }
 
 .admin-app .dogma-progress > i {
@@ -2502,7 +2502,7 @@ body.monarch-admin-body::after {
 
 .admin-app .dogma-quote {
   border-left-color: var(--accent);
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(8, 2, 7, 0.3);
   backdrop-filter: blur(8px);
 }
 
@@ -2511,7 +2511,7 @@ body.monarch-admin-body::after {
 .admin-app .dogma-hero-strip {
   border-radius: var(--radius-md);
   border: 1px solid var(--accent-line);
-  background: linear-gradient(100deg, rgba(217, 167, 93, 0.1), transparent 55%);
+  background: linear-gradient(100deg, rgba(255, 91, 189, 0.12), transparent 55%);
 }
 
 /* Link style */
@@ -2528,7 +2528,7 @@ body.monarch-admin-body::after {
 
 .admin-app .dogma-toast {
   border-color: var(--accent-line);
-  background: rgba(12, 11, 10, 0.92);
+  background: rgba(18, 8, 15, 0.94);
   backdrop-filter: var(--glass);
   -webkit-backdrop-filter: var(--glass);
   box-shadow: var(--shadow-lg);
@@ -2537,7 +2537,7 @@ body.monarch-admin-body::after {
 /* Tabs: hide scrollbar on touch but keep scroll */
 
 .admin-app .dogma-tabs {
-  scrollbar-color: rgba(217, 167, 93, 0.35) rgba(0, 0, 0, 0.2);
+  scrollbar-color: rgba(255, 91, 189, 0.42) rgba(8, 2, 7, 0.26);
 }
 
 /* Panel chrome (second definition merges) */
@@ -2545,7 +2545,7 @@ body.monarch-admin-body::after {
 .admin-app .dogma-panel.active {
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);
-  background: linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.064), rgba(255, 255, 255, 0.024));
   backdrop-filter: var(--glass);
   -webkit-backdrop-filter: var(--glass);
   box-shadow: var(--shadow-md), var(--glass-highlight);
@@ -2562,7 +2562,7 @@ body.monarch-admin-body::after {
   .admin-app .dogma-field input,
   .admin-app .dogma-field textarea,
   .admin-app .dogma-field select {
-    border-color: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.24);
   }
 }
 
@@ -2580,18 +2580,18 @@ body.monarch-admin-body::after {
 
 .admin-app .dogma-pill {
   border-color: var(--accent-line);
-  background: rgba(217, 167, 93, 0.08);
+  background: rgba(255, 91, 189, 0.1);
   color: var(--accent-2);
 }
 
 .admin-app .dogma-tag-chip {
   border-color: var(--accent-line);
-  background: rgba(217, 167, 93, 0.1);
+  background: rgba(255, 91, 189, 0.12);
 }
 
 .admin-app .dogma-tag-input {
   border-color: var(--line);
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(8, 2, 7, 0.34);
   border-radius: var(--radius-sm);
 }
 
@@ -2608,12 +2608,12 @@ body.monarch-admin-body::after {
 }
 
 .admin-app .dogma-footnote {
-  color: rgba(185, 173, 160, 0.72);
+  color: rgba(205, 185, 198, 0.74);
 }
 
 .admin-app .dogma-kbd {
   border-color: var(--line);
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(8, 2, 7, 0.44);
   color: var(--muted);
 }
 
@@ -2622,7 +2622,7 @@ body.monarch-admin-body::after {
 .admin-app .dogma-booking-block {
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.048), rgba(8, 2, 7, 0.24));
   backdrop-filter: var(--glass-light);
   -webkit-backdrop-filter: var(--glass-light);
 }
@@ -2656,9 +2656,9 @@ body.monarch-admin-body::after {
   min-height: 14px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(217, 167, 93, 0.12) 50%,
-    rgba(255, 255, 255, 0.04) 100%
+    rgba(255, 255, 255, 0.048) 0%,
+    rgba(255, 91, 189, 0.14) 50%,
+    rgba(255, 255, 255, 0.048) 100%
   );
   background-size: 200% 100%;
   animation: dogma-shimmer 1.2s ease-in-out infinite;
@@ -2667,7 +2667,7 @@ body.monarch-admin-body::after {
 @media (prefers-reduced-motion: reduce) {
   .admin-app .dogma-skeleton {
     animation: none;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.07);
   }
 
   .admin-app .dogma-card-edit-panel {
@@ -2680,7 +2680,7 @@ body.monarch-admin-body::after {
 .admin-app .dogma-lang-pill:focus-visible,
 .admin-app .dogma-card-edit-toggle:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(239, 186, 115, 0.25);
+  box-shadow: 0 0 0 3px rgba(255, 155, 221, 0.3);
 }
 
 /* Print: keep content readable */
@@ -2711,12 +2711,12 @@ body.monarch-admin-body::after {
 }
 
 .dogma-btn--plus {
-  border-color: rgba(57, 255, 20, 0.45) !important;
+  border-color: rgba(255, 91, 189, 0.56) !important;
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.36), transparent 40%),
-    linear-gradient(180deg, #9bff7a 0%, #39ff14 52%, #1ec20a 100%) !important;
-  color: #0b1807 !important;
-  box-shadow: 0 18px 40px rgba(57, 255, 20, 0.28), 0 0 0 4px rgba(57, 255, 20, 0.12) !important;
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.38), transparent 40%),
+    linear-gradient(180deg, #ffc4ee 0%, #ff5bbd 52%, #d92f94 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 18px 40px rgba(255, 91, 189, 0.34), 0 0 0 4px rgba(255, 91, 189, 0.14) !important;
 }
 
 .dogma-btn--plus:hover {
@@ -2731,13 +2731,13 @@ body.monarch-admin-body::after {
 }
 
 .dogma-collapsible-cat {
-  border-color: rgba(79, 139, 255, 0.38) !important;
-  background: linear-gradient(180deg, rgba(79, 139, 255, 0.12), rgba(79, 139, 255, 0.04)) !important;
+  border-color: rgba(255, 155, 221, 0.46) !important;
+  background: linear-gradient(180deg, rgba(255, 155, 221, 0.15), rgba(255, 91, 189, 0.055)) !important;
 }
 
 .dogma-collapsible-svc {
-  border-color: rgba(239, 186, 115, 0.34) !important;
-  background: linear-gradient(180deg, rgba(239, 186, 115, 0.1), rgba(239, 186, 115, 0.03)) !important;
+  border-color: rgba(255, 91, 189, 0.42) !important;
+  background: linear-gradient(180deg, rgba(255, 91, 189, 0.12), rgba(255, 91, 189, 0.04)) !important;
 }
 
 .dogma-collapsible-summary {
@@ -2749,8 +2749,8 @@ body.monarch-admin-body::after {
   list-style: none;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(8, 2, 7, 0.26);
 }
 
 .dogma-collapsible-summary::-webkit-details-marker {
@@ -2797,11 +2797,11 @@ body.monarch-admin-body::after {
 }
 
 .dogma-collapsible-cat > .dogma-collapsible-summary .dogma-collapsible-meta {
-  color: #4f8bff;
+  color: #ff9bdd;
 }
 
 .dogma-collapsible-svc > .dogma-collapsible-summary .dogma-collapsible-meta {
-  color: #efba73;
+  color: #ffc4ee;
 }
 
 .dogma-collapsible-body {
