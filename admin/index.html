@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MONARCH — Panel treści</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body class="dogma-admin-shell monarch-admin-body">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("dogma_admin_token");
+        if (!t || !String(t).trim()) window.location.replace("/");
+      } catch (_e) {
+        window.location.replace("/");
+      }
+    })();
+  </script>
+
+  <div id="appView" class="dogma-admin admin-app">
+    <header class="dogma-admin__head">
+      <div>
+        <h1>Panel treści — MONARCH</h1>
+        <p>Dodajesz zdjęcia i teksty — zapisujesz — klienci to widzą na stronie.</p>
+      </div>
+      <div class="dogma-admin__actions">
+        <span class="dogma-dirty-banner" id="dirtyBanner" aria-live="polite"></span>
+        <span class="dogma-status" id="saveStatus" aria-live="polite"></span>
+        <button type="button" class="dogma-btn dogma-btn--primary dogma-btn--save" id="saveBtn">Zapisz zmiany</button>
+        <button type="button" class="dogma-btn dogma-btn--ghost" id="logoutBtn">Wyloguj</button>
+      </div>
+    </header>
+
+    <nav class="dogma-tabs" id="tabNav" aria-label="Sekcje"></nav>
+
+    <section class="dogma-panel" data-panel="works" id="panel-works"></section>
+    <section class="dogma-panel" data-panel="barbers" id="panel-barbers"></section>
+    <section class="dogma-panel" data-panel="services" id="panel-services"></section>
+    <section class="dogma-panel" data-panel="booking" id="panel-booking"></section>
+    <section class="dogma-panel" data-panel="contacts" id="panel-contacts"></section>
+
+    <div class="dogma-save-bar" aria-hidden="false">
+      <button type="button" class="dogma-btn dogma-btn--primary dogma-btn--block-sm" id="saveBtnSticky">Zapisz zmiany</button>
+    </div>
+  </div>
+
+  <script type="module" src="/admin/admin.js"></script>
+</body>
+</html>
